@@ -9,10 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="739e422a-ce2f-4c56-a118-8ca65f865cf4" name="Changes" comment="Ajuste al dinamismo jquery y ListarSociosServlet">
+    <list default="true" id="739e422a-ce2f-4c56-a118-8ca65f865cf4" name="Changes" comment="Funcion borrarSocios ya hecha">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/iesvdm/jsp_servlet_jdbc/servlet/EditarSociosServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FormularioEditarSocios.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/iesvdm/jsp_servlet_jdbc/servlet/BorrarSociosServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/iesvdm/jsp_servlet_jdbc/servlet/BorrarSociosServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/grabaSocio.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/grabaSocio.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/baloncesto_servlet.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/baloncesto_servlet.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/listadoSociosB.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/listadoSociosB.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,10 +26,10 @@
       <list>
         <option value="Servlet" />
         <option value="Interface" />
-        <option value="Jsp File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -96,7 +97,7 @@
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "JavaScript.Libraries",
+    "settings.editor.selected.configurable": "database.query.execution",
     "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.2.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   },
@@ -121,7 +122,12 @@
       <recent name="org.iesvdm.jsp_servlet_jdbc.dao" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.12">
+    <configuration name="baloncesto_servlet.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/src/main/resources/baloncesto_servlet.sql" />
+      <script-mode>FILE</script-mode>
+      <method v="2" />
+    </configuration>
     <configuration name="Tomcat 10.1.12" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.12" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="update-resources" />
       <deployment>
@@ -209,6 +215,11 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Database Script.baloncesto_servlet.sql" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -239,7 +250,9 @@
       <workItem from="1735925979392" duration="1466000" />
       <workItem from="1735930033538" duration="1193000" />
       <workItem from="1735992688402" duration="4722000" />
-      <workItem from="1736016921420" duration="5865000" />
+      <workItem from="1736016921420" duration="6339000" />
+      <workItem from="1736091198604" duration="8595000" />
+      <workItem from="1736108919159" duration="845000" />
     </task>
     <task id="LOCAL-00001" summary="Commit inicial">
       <option name="closed" value="true" />
@@ -393,7 +406,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736018395377</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Funcion borrarSocios ya hecha">
+      <option name="closed" value="true" />
+      <created>1736023125891</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1736023125891</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -417,7 +438,8 @@
     <MESSAGE value="Más estilos bootstrap" />
     <MESSAGE value="Más dinamismos jquery" />
     <MESSAGE value="Ajuste al dinamismo jquery y ListarSociosServlet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajuste al dinamismo jquery y ListarSociosServlet" />
+    <MESSAGE value="Funcion borrarSocios ya hecha" />
+    <option name="LAST_COMMIT_MESSAGE" value="Funcion borrarSocios ya hecha" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -450,6 +472,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/jsp_servlet_jdbc/servlet/EditarSociosServlet.java</url>
+          <line>26</line>
+          <properties class="org.iesvdm.jsp_servlet_jdbc.servlet.EditarSociosServlet" method="doPost">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

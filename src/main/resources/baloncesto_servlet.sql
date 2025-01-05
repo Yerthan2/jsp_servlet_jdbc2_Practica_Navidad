@@ -19,6 +19,7 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `baloncesto`
 --
+DROP DATABASE baloncesto_servlet;
 CREATE DATABASE IF NOT EXISTS `baloncesto_servlet` DEFAULT CHARACTER SET utf8 COLLATE utf8_bin;
 USE `baloncesto_servlet`;
 
